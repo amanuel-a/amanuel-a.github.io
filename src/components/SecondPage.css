@@ -1,0 +1,43 @@
+.second-page {
+  background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.second-page h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  line-height: 1.4;
+  max-width: 800px;
+}
+
+.second-page span {
+  display: block;
+  margin: 1rem 0;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+.line-0 { animation-delay: 0.2s; }
+.line-1 { animation-delay: 0.6s; }
+.line-2 { animation-delay: 1s; }
+.line-3 { animation-delay: 1.4s; }
+.line-4 { animation-delay: 1.8s; }
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .second-page h1 {
+    font-size: 2rem;
+  }
+}
