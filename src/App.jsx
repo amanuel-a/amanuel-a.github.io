@@ -1,22 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import WelcomePage from './components/WelcomePage';
-import SecondPage from './components/SecondPage';
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Work from './components/Work';
+import Writing from './components/Writing';
+import Speaking from './components/Speaking';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
-  const [showWelcome, setShowWelcome] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowWelcome(false);
-    }, 7000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="App">
-      {showWelcome ? <WelcomePage /> : <SecondPage />}
+      <Header />
+      <Hero />
+      <Work />
+      <Writing />
+      <Speaking />
+      <Contact />
     </div>
   );
 }

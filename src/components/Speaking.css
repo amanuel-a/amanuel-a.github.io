@@ -1,0 +1,113 @@
+.speaking {
+  padding: 6rem 0;
+  background: #f8fafc;
+}
+
+.speaking .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.talks-list {
+  margin-bottom: 4rem;
+}
+
+.talk-item {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.talk-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.talk-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.talk-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.talk-details span {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.event {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.location::before {
+  content: "📍 ";
+}
+
+.date::before {
+  content: "📅 ";
+}
+
+.talk-content p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.speaking-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.speaking-cta h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.speaking-cta p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.speaking-cta .btn-primary {
+  background: white;
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .speaking {
+    padding: 4rem 0;
+  }
+
+  .talk-item {
+    padding: 1.5rem;
+  }
+
+  .talk-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .speaking-cta {
+    padding: 2rem;
+  }
+
+  .speaking-cta h3 {
+    font-size: 1.5rem;
+  }
+}
